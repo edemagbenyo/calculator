@@ -28,8 +28,7 @@ git clone git@github.com:edemagbenyo/calculator.git
 
 To use calculator app, follow these steps:
 
-1. Enter a city name
-2. Hit the search button
+1. Compute an operation with the number and the operands.
 
 
 ## Contributing to calculator app
