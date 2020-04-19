@@ -1,4 +1,4 @@
-# Weather App
+# Calculator App
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/edemagbenyo/calculator)
