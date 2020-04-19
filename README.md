@@ -26,7 +26,7 @@ git clone git@github.com:edemagbenyo/calculator.git
 ```
 ## Using calculator app
 
-To use calculator app, follow these steps:
+To use [calculator app](https://smartcalculateur.herokuapp.com/), follow these steps:
 
 1. Compute an operation with the number and the operands.
 
