@@ -16,13 +16,21 @@ Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of `nodejs`
 * You have a `<Windows/Linux/Mac>` machine.
 
-## Installing calculator app
+## Installing and running calculator app
 
 To install calculator app, follow these steps:
 
 1. Clone the project
 ```
 git clone git@github.com:edemagbenyo/calculator.git
+```
+2. Install all dependencies
+```
+npm install
+```
+3. Run the app with
+```
+npm run start
 ```
 ## Using calculator app
 
