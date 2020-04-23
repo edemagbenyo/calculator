@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Display.scss';
+
 class Display extends Component {
   constructor() {
     super();
