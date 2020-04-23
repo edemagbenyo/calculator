@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
+import '../styles/ButtonPanel.scss'
 
 class ButtonPanel extends Component {
   constructor(props) {
@@ -9,35 +10,35 @@ class ButtonPanel extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ButtonPanel">
         <div className="group1">
-          <Button name="AC" />
-          <Button name="+/-" />
-          <Button name="%" />
-          <Button name="÷" />
+          <Button color="#E0E0E0" wide={false} name="AC" />
+          <Button color="#E0E0E0" wide={false} name="+/-" />
+          <Button color="#E0E0E0" wide={false} name="%" />
+          <Button  wide={false} name="÷" />
         </div>
         <div className="group2">
-          <Button name="7" />
-          <Button name="8" />
-          <Button name="9" />
-          <Button name="X" />
+          <Button color="#E0E0E0" wide={false} name="7" />
+          <Button color="#E0E0E0" wide={false} name="8" />
+          <Button color="#E0E0E0" wide={false} name="9" />
+          <Button  wide={false} name="X" />
         </div>
         <div className="group3">
-          <Button name="4" />
-          <Button name="5" />
-          <Button name="6" />
-          <Button name="-" />
+          <Button color="#E0E0E0" wide={false} name="4" />
+          <Button color="#E0E0E0" wide={false} name="5" />
+          <Button color="#E0E0E0" wide={false} name="6" />
+          <Button  wide={false} name="-" />
         </div>
         <div className="group4">
-          <Button name="1" />
-          <Button name="2" />
-          <Button name="3" />
-          <Button name="+" />
+          <Button color="#E0E0E0" wide={false} name="1" />
+          <Button color="#E0E0E0" wide={false} name="2" />
+          <Button color="#E0E0E0" wide={false} name="3" />
+          <Button  wide={false} name="+" />
         </div>
         <div className="group5">
-          <Button name="0" />
-          <Button name="." />
-          <Button name="=" />
+          <Button color="#E0E0E0" wide={true} name="0" />
+          <Button color="#E0E0E0" wide={false} name="." />
+          <Button  wide={false} name="=" />
         </div>
       </div>
     );
