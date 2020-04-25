@@ -7,7 +7,7 @@ import calculate from '../logic/calculate';
 function App() {
   return (
     <div className="App">
-      <Display result="0" />
+      <Display result="0" calculate={calculate} />
       <ButtonPanel />
     </div>
   );

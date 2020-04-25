@@ -1,19 +1,19 @@
-import operate from "./operate";
+import operate from './operate';
 
 export default function calculate({ total, next, operation }, buttonName) {
-  const result = {};
+  let result = {};
   switch (buttonName) {
-    case "+/-":
+    case '+/-':
       result = {
-        total: (total *= -1),
-        next: (next *= -1),
+        total: (total * -1),
+        next: (next * -1),
       };
       break;
-    case "+" || "-" || "x" || "÷" || "%":
+    case '+' || '-' || 'x' || '÷' || '%':
       result = operate(total, next, operation);
       break;
     default:
       break;
   }
-  return { total, next };
+  return result;
 }
