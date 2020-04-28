@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 import '../styles/ButtonPanel.scss';
 
@@ -6,12 +7,14 @@ class ButtonPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.handleClick = this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName){
-    return this.props.clickHandler(buttonName)
+  handleClick(buttonName) {
+    const { clickHandler } = this.props;
+    return clickHandler(buttonName);
   }
+
   render() {
     return (
       <div className="ButtonPanel">
@@ -48,5 +51,8 @@ class ButtonPanel extends Component {
     );
   }
 }
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
