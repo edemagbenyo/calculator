@@ -1,4 +1,4 @@
-import BigJs from 'big.js';
+import BigJs from 'big.js/big';
 
 
 const operate = (numerOne, numberTwo, operation) => {
