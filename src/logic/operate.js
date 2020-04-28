@@ -1,22 +1,21 @@
-import BigJs from 'big.js/index';
+import BigJs from 'big.js';
 
 
 const operate = (numerOne, numberTwo, operation) => {
   let result = null;
   switch (operation) {
     case '+':
-      result = BigJs(numerOne) + BigJs(numberTwo);
+      result = BigJs(numerOne).plus(BigJs(numberTwo)).toString();
       break;
     case '-':
-      result = BigJs(numerOne) - BigJs(numberTwo);
+      result = BigJs(numerOne).minus(BigJs(numberTwo)).toString();
       break;
-    case '*':
-      result = BigJs(numerOne) * BigJs(numberTwo);
+    case 'x':
+      result = BigJs(numerOne).times(BigJs(numberTwo)).toString();
       break;
     case '÷':
-      result = BigJs(numerOne) / BigJs(numberTwo);
+      result = BigJs(numberTwo).eq(0) ? NaN : BigJs(numerOne).div(BigJs(numberTwo)).toString();
       break;
-
     default:
       break;
   }
