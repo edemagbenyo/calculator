@@ -1,13 +1,12 @@
 import operate from './operate';
 
 function operands(total, next, operation, buttonName) {
-  
-  if(total && next && operation){
-    return{
-      total: operate(total,next,operation),
+  if (total && next && operation) {
+    return {
+      total: operate(total, next, operation),
       next: null,
-      operation:buttonName
-    }
+      operation: buttonName,
+    };
   }
   if (total && operation) {
     return {
@@ -16,7 +15,7 @@ function operands(total, next, operation, buttonName) {
       operation: buttonName,
     };
   }
-  
+
   if (total && next && !operation) {
     return {
       total: next,
@@ -50,15 +49,20 @@ export default function calculate({ total, next, operation }, buttonName) {
     result = { total: null, next: null, operation: null };
   } else if (buttonName === '%') {
     result = {
-      total: (total) || next,
-      next: (next) ? (next / 100).toString() : buttonName,
+      total: total || next,
+      next: next ? (next / 100).toString() : buttonName,
     };
   } else if (buttonName === '+/-') {
     result = {
       total: (total * -1).toString(),
       next: (next * -1).toString(),
     };
-  } else if (buttonName === '+' || buttonName === '-' || buttonName === '÷' || buttonName === 'x') {
+  } else if (
+    buttonName === '+'
+    || buttonName === '-'
+    || buttonName === '÷'
+    || buttonName === 'x'
+  ) {
     result = operands(total, next, operation, buttonName);
   } else if (buttonName === '=') {
     result = {
@@ -68,8 +72,8 @@ export default function calculate({ total, next, operation }, buttonName) {
     };
   } else {
     result = {
-      total: (total) || next,
-      next: (next) ? next + buttonName : buttonName,
+      total: total || next,
+      next: next ? next + buttonName : buttonName,
     };
   }
 
