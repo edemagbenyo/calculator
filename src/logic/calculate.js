@@ -1,5 +1,38 @@
 import operate from './operate';
 
+function operands(total, next, operation,buttonName){
+  
+  if(total && operation){
+
+    return {
+      total:total,
+      next:null,
+      operation:buttonName
+    }
+  }
+  if(total && next && ! operation){
+    console.log(`${total} ${next} ${operation}`);
+    return {
+      total:next,
+      next:null,
+      operation:buttonName
+    }
+  }
+  if(total){
+    return {
+      total:total,
+      next:null,
+      operation:buttonName
+    }
+  } 
+  if(!total){
+    return{
+      total:next,
+      next:null,
+      operation:buttonName
+    }
+  }
+}
 export default function calculate({ total, next, operation }, buttonName) {
   let result = {};
   if (buttonName === 'AC') {
@@ -15,11 +48,8 @@ export default function calculate({ total, next, operation }, buttonName) {
       next: (next * -1).toString(),
     };
   } else if (buttonName === '+' || buttonName === '-' || buttonName === '÷' || buttonName === 'x') {
-    result = {
-      total: (total && operation) ? total : next,
-      next: null,
-      operation: buttonName,
-    };
+
+    result = operands(total,next,operation,buttonName);
   } else if (buttonName === '=') {
     result = {
       total: operate(total, next, operation),
