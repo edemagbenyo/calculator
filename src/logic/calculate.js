@@ -1,37 +1,39 @@
 import operate from './operate';
 
-function operands(total, next, operation,buttonName){
-  
-  if(total && operation){
-
+function operands(total, next, operation, buttonName) {
+  if (total && operation) {
     return {
-      total:total,
-      next:null,
-      operation:buttonName
-    }
+      total,
+      next: null,
+      operation: buttonName,
+    };
   }
-  if(total && next && ! operation){
-    console.log(`${total} ${next} ${operation}`);
+  if (total && next && !operation) {
     return {
-      total:next,
-      next:null,
-      operation:buttonName
-    }
+      total: next,
+      next: null,
+      operation: buttonName,
+    };
   }
-  if(total){
+  if (total) {
     return {
-      total:total,
-      next:null,
-      operation:buttonName
-    }
-  } 
-  if(!total){
-    return{
-      total:next,
-      next:null,
-      operation:buttonName
-    }
+      total,
+      next: null,
+      operation: buttonName,
+    };
   }
+  if (!total) {
+    return {
+      total: next,
+      next: null,
+      operation: buttonName,
+    };
+  }
+  return {
+    total: null,
+    next: null,
+    operation: null,
+  };
 }
 export default function calculate({ total, next, operation }, buttonName) {
   let result = {};
@@ -48,8 +50,7 @@ export default function calculate({ total, next, operation }, buttonName) {
       next: (next * -1).toString(),
     };
   } else if (buttonName === '+' || buttonName === '-' || buttonName === '÷' || buttonName === 'x') {
-
-    result = operands(total,next,operation,buttonName);
+    result = operands(total, next, operation, buttonName);
   } else if (buttonName === '=') {
     result = {
       total: operate(total, next, operation),

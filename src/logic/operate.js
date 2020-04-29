@@ -3,7 +3,6 @@ import BigJs from 'big.js/big';
 
 const operate = (numerOne, numberTwo, operation) => {
   let result = null;
-  console.log(`${numerOne}, ${numberTwo}`);
   switch (operation) {
     case '+':
       result = BigJs(numerOne).plus(BigJs(numberTwo)).toString();

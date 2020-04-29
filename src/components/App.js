@@ -15,9 +15,6 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidUpdate(){
-    console.log(this.state);
-  }
   handleClick(buttonName) {
     const result = calculate(this.state, buttonName);
     this.setState({ ...result });
