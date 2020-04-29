@@ -1,6 +1,14 @@
 import operate from './operate';
 
 function operands(total, next, operation, buttonName) {
+  
+  if(total && next && operation){
+    return{
+      total: operate(total,next,operation),
+      next: null,
+      operation:buttonName
+    }
+  }
   if (total && operation) {
     return {
       total,
@@ -8,6 +16,7 @@ function operands(total, next, operation, buttonName) {
       operation: buttonName,
     };
   }
+  
   if (total && next && !operation) {
     return {
       total: next,
