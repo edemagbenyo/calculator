@@ -7,13 +7,17 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/calculator?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-A calculator app
+A simple calculator application. It can be used to perform basic calculation operation such as addition, substraction, multiplication and division. The application is built with react and uses redux to manage the state. 
+
+Live version is available [here](https://smartcalculateur.herokuapp.com/)
+
+To report a bug or request a feature use this [link](https://github.com/edemagbenyo/calculator/issues)
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `nodejs`
+* You have installed the latest version of `Node.js`
 * You have a `<Windows/Linux/Mac>` machine.
 
 ## Installing and running calculator app
@@ -21,8 +25,10 @@ Before you begin, ensure you have met the following requirements:
 To install calculator app, follow these steps:
 
 1. Clone the project
-```
+```bash
 git clone git@github.com:edemagbenyo/calculator.git
+
+cd calculator
 ```
 2. Install all dependencies
 ```
