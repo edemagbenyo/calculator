@@ -9,6 +9,9 @@
 
 A simple calculator application. It can be used to perform basic calculation operation such as addition, substraction, multiplication and division. The application is built with react and uses redux to manage the state. 
 
+![Screenshot of the webpage](https://github.com/edemagbenyo/calculator/blob/develop/screenshots/screen.png)
+
+
 Live version is available [here](https://smartcalculateur.herokuapp.com/)
 
 To report a bug or request a feature use this [link](https://github.com/edemagbenyo/calculator/issues)
@@ -57,16 +60,16 @@ To contribute to the calculator app, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-* [@edemagbenyo](https://github.com/edemagbenyo) 📖
-
-
 ## Contact
 
-If you want to contact me you can reach me at <edem.agbenyo@gmail.com>.
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
+
+## Known issues or improvement
+1. Add more scientific operations such as SIN, COS, LOG etc...
+2. Allow users to customize the output format of their calculation.
+3. Allow users to customize the look of the calculator.
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
