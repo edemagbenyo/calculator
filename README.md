@@ -9,7 +9,7 @@
 
 A simple calculator application. It can be used to perform basic calculation operation such as addition, substraction, multiplication and division. The application is built with react and uses redux to manage the state. 
 
-![Screenshot of the webpage](https://github.com/edemagbenyo/calculator/blob/develop/screenshots/screen.png)
+![Screenshot of the webpage](https://github.com/edemagbenyo/calculator/blob/development/screenshots/screen.png)
 
 
 Live version is available [here](https://smartcalculateur.herokuapp.com/)
