@@ -46,6 +46,7 @@ npm run start
 To use [calculator app](https://smartcalculateur.herokuapp.com/), follow these steps:
 
 1. Compute an operation with the number and the operands.
+2. Press the = sign to see the result.
 
 
 ## Contributing to calculator app
