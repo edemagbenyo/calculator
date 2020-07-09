@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/calculator?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-A simple calculator application. It can be used to perform basic calculation operation such as addition, substraction, multiplication and division. The application is built with react and uses redux to manage the state. 
+A simple calculator application. It can be used to perform basic calculation operation such as addition, subtraction, multiplication and division. The application is built with React and uses Redux to manage the state. 
 
 ![Screenshot of the webpage](https://github.com/edemagbenyo/calculator/blob/development/screenshots/screen.png)
 
@@ -61,13 +61,15 @@ To contribute to the calculator app, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contact
+## Author
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+- Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+- Twitter: [Edem Agbenyo](https://twitter.com/edemAgbenyo)
+- LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
+- Email : [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
-* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-## Known issues or improvement
+## Future features
 1. Add more scientific operations such as SIN, COS, LOG etc...
 2. Allow users to customize the output format of their calculation.
 3. Allow users to customize the look of the calculator.
