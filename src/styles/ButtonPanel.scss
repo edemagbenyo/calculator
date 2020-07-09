@@ -1,0 +1,16 @@
+.ButtonPanel {
+  display: flex;
+  flex-direction: column;
+  &>*{
+    height: 100px;
+    display: flex;
+    &>*{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:#000000;
+      border:1px solid #C8C8C8;
+      font-size: 1.5em;
+    }
+  }
+}

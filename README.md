@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Calculator App
 
-## Available Scripts
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/edemagbenyo/calculator)
+![GitHub contributors](https://img.shields.io/github/contributors/edemagbenyo/calculator)
+![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/calculator?style=social)
+![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/calculator?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-In the project directory, you can run:
+A simple calculator application. It can be used to perform basic calculation operation such as addition, substraction, multiplication and division. The application is built with react and uses redux to manage the state. 
 
-### `yarn start`
+![Screenshot of the webpage](https://github.com/edemagbenyo/calculator/blob/development/screenshots/screen.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Live version is available [here](https://smartcalculateur.herokuapp.com/)
 
-### `yarn test`
+To report a bug or request a feature use this [link](https://github.com/edemagbenyo/calculator/issues)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `yarn build`
+Before you begin, ensure you have met the following requirements:
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+* You have installed the latest version of `Node.js`
+* You have a `<Windows/Linux/Mac>` machine.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installing and running calculator app
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To install calculator app, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the project
+```bash
+git clone git@github.com:edemagbenyo/calculator.git
 
-### `yarn eject`
+cd calculator
+```
+2. Install all dependencies
+```
+npm install
+```
+3. Run the app with
+```
+npm run start
+```
+## Using calculator app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To use [calculator app](https://smartcalculateur.herokuapp.com/), follow these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Compute an operation with the number and the operands.
+2. Press the = sign to see the result.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing to calculator app
+<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+To contribute to the calculator app, follow these steps:
 
-## Learn More
+1. Fork this repository.
+2. Create a branch: `git checkout -b feature/awesome_branch`.
+3. Make your changes and commit them: `git commit -m 'awesome message'`
+4. Push to the original branch: `git push origin feature/awesome_branch`
+5. Create the pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
 
-### Code Splitting
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Known issues or improvement
+1. Add more scientific operations such as SIN, COS, LOG etc...
+2. Allow users to customize the output format of their calculation.
+3. Allow users to customize the look of the calculator.
 
-### Analyzing the Bundle Size
+## License
+<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project uses the following license: [MIT](<link>).
